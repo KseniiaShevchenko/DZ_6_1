@@ -1,0 +1,81 @@
+/*Exercise 1*/
+.p1, .p2 {
+	min-height: 100px;
+}
+
+.p1 {
+	background: #008000;
+}
+
+.p2 {
+	background: #EE82EE;
+}
+
+.p1:active{
+	background: #ff0000;
+}
+
+.p2:active {
+	background: #ffd700;
+}
+
+.p1:hover {
+	background: #ffff00;
+}
+
+.p2:hover {
+	background: #a52a2a;
+}
+
+/*Exercise 2*/
+input:active {
+	border: 3px solid #008000;
+}
+
+/*Exercise 3*/
+.third {
+	min-height: 20px;
+}
+
+.third:nth-child(odd) {
+	background: #c9c9c9;
+}
+
+/*Exercise 4*/
+.fourth::first-letter {
+	color: #ff0000;
+	font-family: "Georgia";
+	font-size: 2em;
+}
+
+/*Exercise 5*/
+p::after {
+	content: "*";
+}
+
+/*Exercise 6*/
+p::before {
+	content: "\2602";
+}
+
+/*Exercise 7*/
+.square {
+	
+	width: 150px; 
+	height: 80px; 
+	margin-left: 26px;
+	background: #000;
+	position: relative;
+}
+
+.square::before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	right: 100%; 
+	top: calc(50% - 12px);
+	border-top: 12px solid transparent;
+	border-right: 24px solid #000;
+	border-bottom: 12px solid transparent;}
+}
